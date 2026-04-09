@@ -4,7 +4,7 @@ services:
   image: yannuri03/simpleapps
   ports:
     - "8181:3000"
-  env:
+  environment:
     - DB_NAME=training
     - DB_HOST=172.23.5.16
     - DB_USER=peserta
