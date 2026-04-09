@@ -1,0 +1,9 @@
+services:
+ simple-apps:
+  container_name: ct-simpleapps
+  build: /apps
+  ports:
+  - "8181:3000"
+  env_file:
+  - .env
+  restart: always
